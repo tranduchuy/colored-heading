@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
-import ExampleComponent from 'colored-heading'
+import ColoredHeadingOne from 'colored-heading'
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ColoredHeadingOne text='Modern React component module'
+                           color={"red"}/>
       </div>
     )
   }

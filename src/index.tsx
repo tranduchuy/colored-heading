@@ -1,23 +1,25 @@
 /**
- * @class ExampleComponent
+ * @class ColoredHeadingOne
  */
 
-import * as React from 'react'
+import * as React from 'react';
 
-import styles from './styles.css'
+export type Props = {
+  text: string,
+  color: string
+}
 
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
+export default class ColoredHeadingOne extends React.Component<Props> {
   render() {
     const {
-      text
-    } = this.props
+      text,
+      color
+    } = this.props;
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <h1 style={{color}}>
+        {text}
+      </h1>
     )
   }
 }
